@@ -1,1 +1,22 @@
-<h1>My answer</h1>
+<div class="d-flex p-5 bd-highlight justify-content-center">
+  <div class="container">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h1 class="card-title border-bottom pb-3"><%= 'User Question'%></h1>
+        <h5 class="card-title"><%= @question%></h5>
+      </div>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h1 class="card-title border-bottom pb-3"><%= 'Coach answer'%></h1>
+        <p class="card-text"><%= @answer%></p>
+      </div>
+    </div>
+    <div class="btn-group p-3" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-primary"><%= link_to 'volver a Preguntar', ask_path%></button>
+    </div>
+  </div>
+</div>
+  
+  
