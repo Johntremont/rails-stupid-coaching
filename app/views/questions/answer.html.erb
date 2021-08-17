@@ -1,22 +1,23 @@
 <div class="container">
-  <div class="d-flex p-5 bd-highlight justify-content-center">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h1 class="card-title border-bottom pb-3"><%= 'User Question'%></h1>
-        <h5 class="card-title"><%= @question%></h5>
-      </div>
-    </div>
-    <br>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h1 class="card-title border-bottom pb-3"><%= 'Coach answer'%></h1>
-        <p class="card-text"><%= @answer%></p>
-      </div>
-    </div>
-    <div class="btn-group p-3" role="group" aria-label="Basic example">
-      <button type="button" class="btn btn-primary"><%= link_to 'volver a Preguntar', ask_path%></button>
-    </div>
+  <h2> Stupid Coaching </h2>
+  <div class="p-3 border-gray mb-3">
+      <p><%=@question%></p>
+      <p>-You</p>
+
   </div>
+  <div class="bg-warning p-3 border-gray">
+      <strong><p><%=@answer%></p></strong>
+      <p>-Your Coach</p>
+  </div>
+  <%= link_to "volver a preguntar", ask_path, class: "btn btn-primary mt-5"%>
 </div>
-  
-  
+
+<style>
+.border-gray{
+  border-left: 7px solid lightgray;
+}
+/* a{
+  color: white;
+  text-decoration:
+} */
+</style>
